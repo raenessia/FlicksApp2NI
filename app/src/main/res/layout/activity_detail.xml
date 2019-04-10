@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryLight">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textSize="30sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="10"
+        android:rating="8.2" />
+
+    <TextView
+        android:id="@+id/overview_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et velit eros. Morbi mattis viverra nibh vitae porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pellentesque, justo in aliquam pharetra, elit lectus dictum turpis, quis sagittis nisl eros sed nunc. Proin non feugiat est. Curabitur eleifend elementum dui. Sed sed egestas erat. Nunc sed gravida lectus, nec ultricies turpis. Nullam sed risus et neque tempor suscipit. Donec non nisi ac dolor egestas ultrices. In dui nulla, egestas ut tellus vel, sagittis efficitur tortor. Sed turpis elit, aliquam a justo et, tempor scelerisque ex." />
+</LinearLayout>
